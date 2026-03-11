@@ -1,0 +1,153 @@
+# ============================================
+# MEDIAPIPE MODELS (БОЛЬШИЕ ФАЙЛЫ)
+# ============================================
+public/mediapipe/gesture_recognizer.task
+public/mediapipe/*.task
+public/mediapipe/wasm/*.wasm
+public/mediapipe/wasm/*.js
+
+# Но оставляем структуру папок
+!public/mediapipe/.gitkeep
+!public/mediapipe/wasm/.gitkeep
+
+# ============================================
+# PYTHON BACKEND
+# ============================================
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Virtual environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# PyInstaller
+*.spec
+build/
+dist/
+*.egg-info/
+
+# Vosk models (ОЧЕНЬ БОЛЬШИЕ!)
+model/
+!model/.gitkeep
+big-model/
+vosk-model-*.zip
+
+# Python cache
+.pytest_cache/
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# ============================================
+# NODE.JS / FRONTEND
+# ============================================
+node_modules/
+package-lock.json
+pnpm-lock.yaml
+yarn.lock
+
+# Build output
+dist/
+dist-ssr/
+*.local
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# ============================================
+# TAURI
+# ============================================
+# Rust build
+src-tauri/target/
+src-tauri/Cargo.lock
+
+# Generated schemas
+src-tauri/gen/
+
+# Compiled binaries
+src-tauri/bin/
+*.exe
+*.dmg
+*.app
+
+# Tauri bundles
+src-tauri/target/release/bundle/
+
+# ============================================
+# IDE / EDITORS
+# ============================================
+# VSCode
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+
+# JetBrains (WebStorm, PyCharm, etc)
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Cursor AI
+.cursorrules
+
+# ============================================
+# OS FILES
+# ============================================
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+[Dd]esktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+.directory
+
+# ============================================
+# TEMPORARY FILES
+# ============================================
+*.tmp
+*.temp
+*.swp
+*.swo
+*~.nib
+*.bak
+*.cache
+
+# ============================================
+# PROJECT SPECIFIC
+# ============================================
+# Debug files
+debug backend.bat
+127.0.0.1
+
+
+# User settings (сохраняются локально)
+*.user
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?

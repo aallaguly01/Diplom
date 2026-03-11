@@ -1,0 +1,69 @@
+{
+  "engine": {
+    "fps_target": 30,
+    "gesture_smoothing_window": 5,
+    "confidence_threshold": 0.6,
+    "min_gesture_interval": 0.1,
+    "min_click_interval": 0.3,
+    "use_kalman_filter": true
+  },
+  "gestures": {
+    "POINTING": {
+      "enabled": true,
+      "action": "move_cursor",
+      "confidence_threshold": 0.7,
+      "description": "Указательный палец вытянут"
+    },
+    "PINCH": {
+      "enabled": true,
+      "action": "click",
+      "confidence_threshold": 0.7,
+      "description": "Большой и указательный соединены"
+    },
+    "OPEN_PALM": {
+      "enabled": true,
+      "action": "pause",
+      "confidence_threshold": 0.8,
+      "description": "Все пальцы расправлены"
+    },
+    "CLOSED_FIST": {
+      "enabled": true,
+      "action": "hold",
+      "confidence_threshold": 0.8,
+      "description": "Кулак (все пальцы согнуты)"
+    },
+    "PEACE": {
+      "enabled": true,
+      "action": "right_click",
+      "confidence_threshold": 0.75,
+      "description": "V-sign (указательный и средний)"
+    }
+  },
+  "voice": {
+    "enabled": true,
+    "language": "ru",
+    "continuous_listening": false,
+    "model_path": "model",
+    "confidence_threshold": 0.5
+  },
+  "performance": {
+    "profiler_enabled": true,
+    "profiler_window_size": 30,
+    "cpu_limit_percent": 50,
+    "memory_limit_mb": 300,
+    "log_metrics": true
+  },
+  "ui": {
+    "show_landmarks": false,
+    "show_metrics": true,
+    "show_gesture_history": false,
+    "theme": "dark",
+    "fps_display": true
+  },
+  "multimodal": {
+    "fusion_enabled": true,
+    "gesture_weight": 0.7,
+    "voice_weight": 0.3,
+    "conflict_resolution": "prefer_high_confidence"
+  }
+}
